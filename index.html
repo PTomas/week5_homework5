@@ -147,8 +147,8 @@
     <script>
       var i =0;
       var date = 1; 
-      var todoSave9;
-      var todoSave10;
+      var todoSave9 = "9am";
+      var todoSave10 = "10am";
       //var listArray = [reminder[time]];
 
 
@@ -174,7 +174,7 @@
           
           var label = $("<p>");
             console.log(todoMem10);
-            label.text(JSON.parse(localStorage.getItem(todoSave10)));
+            label.text(localStorage.getItem(todoSave10));
             console.log(label);
             $("#ten").append(label);
             
