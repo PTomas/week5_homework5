@@ -144,48 +144,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
-      var i =0;
-      var date = 1; 
-      var todoSave9 = "9am";
-      var todoSave10 = "10am";
-      //var listArray = [reminder[time]];
-
-
-      $("#basic-addon2").on("click",function(){
-          var newToDoSave1 = $("#9oclock").val();
-
-          console.log("9  reminder");
-
-          localStorage.setItem(todoSave9, newToDoSave9);
-
-          $("#9oclock").text.todoMem9;
-      });
-
-      $("#basic-addon3").on("click",function(){
-          var newToDoSave10 = $("#10oclock").val();
-
-          localStorage.setItem(todoSave10, newToDoSave10);
-
-          var todoStri10 = JSON.stringify(newToDoSave10);
-
-          var todoMem10 = JSON.parse(todoStri10);
-          console.log(todoMem10);
-          
-          var label = $("<p>");
-            console.log(todoMem10);
-            label.text(localStorage.getItem(todoSave10));
-            console.log(label);
-            $("#ten").append(label);
-            
-
-          
-      });
-
-
-        
-              
-      
-    </script>
+    <script src="function.js"></script>
   </body>
 </html>
