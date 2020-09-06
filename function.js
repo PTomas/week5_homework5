@@ -92,6 +92,7 @@ $("#basic-addon4").on("click",function(){
 });
   
 $("#basic-addon5").on("click",function(){
+    console.log("12 o'clock");
     var newToDoSave12 = $("#12oclock").val();
 
     localStorage.setItem(todoSave12, newToDoSave12);
